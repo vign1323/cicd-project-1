@@ -46,7 +46,7 @@ pipeline {
         stage('Trivy Docker-scan') {
             steps {
                 script {
-                    sh 'trivy image dockerhub1010/helm-rockets:v1 > scan.txt' 
+                    sh 'trivy image dockerhub1010/helm-rockets:v1 > /home/ubuntu/scan.txt' 
                 }
             }
         }
