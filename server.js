@@ -45,8 +45,8 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="content">
-          <h1>Welcome to My App!</h1>
-          <p>This is a full-page background image demo.</p>
+          <h1>WELCOME TO GREENS TECHNOLOGY PROJECT SESSION</h1>
+          <p>THIS IS ROCKET APPLICATION</p>
         </div>
       </body>
     </html>`);
