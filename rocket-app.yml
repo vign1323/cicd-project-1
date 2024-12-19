@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: helm-rocket-app
-        image: vign1323/helm-rockets:v1.1
+        image: vign1323/helm-rockets:v1
         ports:
         - containerPort: 80
 ---
