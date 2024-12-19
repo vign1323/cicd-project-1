@@ -28,7 +28,7 @@ pipeline {
         stage('Docker Build Images') {
             steps {
                 script {
-                    sh 'docker build -t dockerhub1010/helm-rockets:v1 .'
+                    sh 'docker build -t vign1323/helm-rockets:v1 .'
                     sh 'docker images'
                 }
             }
@@ -37,8 +37,8 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'dockerPass', variable: 'dockerPassword')]) {
-                        sh "docker login -u dockerhub1010 -p ${dockerPassword}"
-                        sh 'docker push dockerhub1010/helm-rockets:v1'
+                        sh "docker login -u vign1323 -p ${dockerPassword}"
+                        sh 'docker push vign1323/helm-rockets:v1'
                     }
                 }
             }
